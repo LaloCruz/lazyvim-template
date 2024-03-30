@@ -4,9 +4,9 @@ return {
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
         "stylua",
-        "luacheck",
         "shellcheck",
         "shfmt",
+        "phpactor",
         "tailwindcss-language-server",
         "typescript-language-server",
         "css-lsp",
@@ -15,5 +15,27 @@ return {
         "marksman",
       })
     end,
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      -- @type lspconfig.options
+      servers = {
+        emmet_ls = {
+          filetypes = {
+            "blade",
+            "css",
+            "html",
+            "javascriptreact",
+            "less",
+            "sass",
+            "scss",
+            "svelte",
+            "typescriptreact",
+            "vue",
+          },
+        },
+      },
+    },
   },
 }
