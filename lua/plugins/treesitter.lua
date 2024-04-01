@@ -5,6 +5,7 @@ return {
       ensure_installed = {
         "cmake",
         "cpp",
+        "lua",
         "css",
         "scss",
         "bash",

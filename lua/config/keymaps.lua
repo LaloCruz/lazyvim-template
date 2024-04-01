@@ -20,7 +20,7 @@ keymap.set("n", "<C-m", "<C-i>", opts)
 
 -- Split window
 keymap.set("n", "ss", ":split<Return>", opts)
-keymap.set("n", "sv", ":vsplit<Return>", opts)
+-- keymap.set("n", "sv", ":vsplit<Return>", opts)
 
 -- Move window
 keymap.set("n", "sh", "<C-w>h")
