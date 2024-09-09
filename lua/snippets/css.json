@@ -1,0 +1,17 @@
+{
+  "mq": {
+    "prefix": ["mq"],
+    "body": ["@media (min-width: $1) {\n$2\n}"],
+    "description": "Add a media query"
+  },
+  "mq-small": {
+    "prefix": ["mq480"],
+    "body": ["@media (min-width: 480px) {\n$2\n}"],
+    "description": "Add a media query for 480px"
+  },
+  "mq-medium": {
+    "prefix": ["mq768"],
+    "body": ["@media (min-width: 768px) {\n$2\n}"],
+    "description": "Add a media query for 768px"
+  }
+}

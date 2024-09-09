@@ -4,9 +4,22 @@ return {
   optional = true,
   opts = {
     formatters_by_ft = {
-      python = { "black" },
+      python = { "isort", "black" },
       php = { "pint" },
       blade = { "blade-formatter", "rustywind" },
+      javascript = { "prettier" },
+      typescript = { "prettier" },
+      javascriptreact = { "prettier" },
+      typescriptreact = { "prettier" },
+      svelte = { "prettier" },
+      css = { "prettier" },
+      html = { "prettier" },
+      json = { "prettier" },
+      yaml = { "prettier" },
+      markdown = { "prettier" },
+      graphql = { "prettier" },
+      liquid = { "prettier" },
+      lua = { "stylua" },
     },
     formatters = {
       pint = {

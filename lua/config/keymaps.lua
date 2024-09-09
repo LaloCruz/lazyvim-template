@@ -29,11 +29,8 @@ keymap.set("n", "sj", "<C-w>j")
 keymap.set("n", "sl", "<C-w>l")
 
 -- New tab
-keymap.set("n", "te", ":tabedit", opts)
-keymap.set("n", "<tab>", ":tabnext<Return>", opts)
-keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
-
--- Diagnostics
-keymap.set("n", "<C-j>", function()
-  vim.diagnostic.goto_next()
-end, opts)
+keymap.set("n", "<leader>to", "<cmd>tabnew<CR>")
+keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>")
+keymap.set("n", "<leader>tn", "<cmd>tabn<CR>")
+keymap.set("n", "<leader>tp", "<cmd>tabp<CR>")
+keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>")

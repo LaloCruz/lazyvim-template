@@ -4,6 +4,9 @@ return {
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
         "stylua",
+        "eslint-lsp",
+        "prettierd",
+        "sql-formatter",
         "shellcheck",
         "shfmt",
         "phpactor",

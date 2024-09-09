@@ -1,0 +1,7 @@
+{
+  "mq": {
+    "prefix": ["mq"],
+    "body": ["@media (min-width: $1) {\n$2\n}"],
+    "description": "Add a media query"
+  }
+}
