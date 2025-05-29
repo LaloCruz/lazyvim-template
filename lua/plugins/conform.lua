@@ -6,6 +6,7 @@ return {
     formatters_by_ft = {
       python = { "isort", "black" },
       php = { "pint" },
+      -- php = { "pint", "php_cs_fixer" },
       blade = { "blade-formatter", "rustywind" },
       javascript = { "prettier" },
       typescript = { "prettier" },

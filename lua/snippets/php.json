@@ -1,0 +1,7 @@
+{
+  "pre": {
+    "prefix": ["pre"],
+    "body": [" echo '<pre>'; var_dump($1); echo '</pre>'; "],
+    "description": "Print a format variable"
+  }
+}

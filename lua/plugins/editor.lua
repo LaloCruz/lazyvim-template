@@ -1,7 +1,13 @@
 return {
   "telescope.nvim",
-  depedencies = {
-    "nvim-telescope/telescope-file-browser.nvim",
+  dependencies = {
+    {
+      "nvim-telescope/telescope-fzf-native.nvim",
+      build = "make",
+    },
+    {
+      "nvim-telescope/telescope-file-browser.nvim",
+    },
   },
   keys = {
     {
@@ -87,11 +93,12 @@ return {
     },
   },
   config = function(_, opts)
+    opts = opts or {}
     local telescope = require("telescope")
     local actions = require("telescope.actions")
     local fb_actions = require("telescope").extensions.file_browser.actions
 
-    opts.defaults = vim.tbl_deep_extend("force", opts.defaults, {
+    opts.defaults = vim.tbl_deep_extend("force", opts.defaults or {}, {
       wrap_results = true,
       layout_strategy = "horizontal",
       layout_config = { prompt_position = "top" },
@@ -133,7 +140,7 @@ return {
               end
             end,
             ["<PageUp>"] = actions.preview_scrolling_up,
-            ["<PageDown"] = actions.preview_scrolling_down,
+            ["<PageDown>"] = actions.preview_scrolling_down,
           },
         },
       },

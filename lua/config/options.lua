@@ -4,3 +4,5 @@ local opt = vim.opt
 
 opt.encoding = "utf-8"
 opt.wrap = true
+
+-- vim.g.lazyvim_php_lsp = "intelephense"
